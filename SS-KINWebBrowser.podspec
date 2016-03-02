@@ -1,7 +1,5 @@
-
 Pod::Spec.new do |s|
-
-  s.name         = "KINWebBrowser"
+  s.name         = "SS-KINWebBrowser"
   s.version      = "1.3.2"
   s.summary      = "A web browser module for your apps."
   s.description  = <<-DESC
@@ -10,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/dfmuir/KINWebBrowser"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author             = { "David F. Muir V" => "dfmuir@gmail.com" }
+  s.author             = { "David F. Muir V" => "dfmuir@gmail.com", "Eddie Li" => "eli@sandsmedia.com" }
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/dfmuir/KINWebBrowser.git", :tag => s.version.to_s }
   s.source_files  = 'KINWebBrowser', 'KINWebBrowser/**/*.{h,m}'
@@ -19,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.weak_framework = 'WebKit'
 
-  s.dependency 'TUSafariActivity', '1.0.4'
+  s.dependency 'SS-TUSafariActivity', '1.0.4'
   s.dependency 'ARChromeActivity', '1.0.5'
 
 end
